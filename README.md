@@ -32,21 +32,6 @@ will create the database and open the sqlite3 console to the database. After thi
 
 To create the table that will maintain the file information. As mia is hardcoded to use a table called "files", please ensure you do not change the name of the table. The database can be named whatever you would like. After you have done this, ensure that mia is pointing to this database (whatever you have named it) in the database field of the GUI.
 
-### Leo ###
-While Leo was also developed on a Windows environment, you should still be able to run him cross platform. Some functionality may not work.
-
-To run Leo, enter the leo directory and create a virtual environment:
-
-`virtualenv .leovenv`
-
-Activate the virtual environment
-
-`.\.leovenv\Sources\activate`
-
-Install required packaed
-
-`pip3 install -r requirements.txt`
-
 ### Insider notes
 
 Do the install fuckery
