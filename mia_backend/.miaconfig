@@ -1,0 +1,11 @@
+SRC_DIR=Y:\TSQ
+SRC_DIR=Z:\QEB
+SRC_DIR=X:\QEHF
+INTERIM=C:\mia\temp
+DST_DIR=Q:\ms-data
+INTERVAL=70
+CONVERTER_FLAGS=--centroid --mzXML
+CONVERTER=C:\ReAdW.exe
+EXT=raw
+DATABASE=Q:\MiaFileLog.db
+THREADED=True
