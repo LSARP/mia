@@ -2,7 +2,7 @@
 import os
 import queue
 import subprocess
-from shutil import copyfile, move
+from shutil import copyfile, move, copy2
 import time
 
 
@@ -88,8 +88,8 @@ class FileMover:
                                 print(tmp + "\n" + mzxml)
                                 print(os.path.join(dst, file.get_dest_filename()))
                                 print(os.path.join(dst, name))
-                                move(mzxml, os.path.join(dst, file.get_dest_filename()))
-                                move(tmp, os.path.join(dst, name))
+                                copy2(mzxml, os.path.join(dst, file.get_dest_filename()))
+                                copy2(tmp, os.path.join(dst, name))
                                 os.remove(mzxml)
                                 os.remove(tmp)
                             except Exception as ex:
@@ -195,7 +195,6 @@ class FileMover:
                         except RawFileException as ex:
                             self._logger.error(str(ex))
 
-        print(good_files)
         return good_files
 
     def check_dirs_exist(self):
